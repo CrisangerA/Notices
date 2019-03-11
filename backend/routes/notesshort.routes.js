@@ -15,7 +15,8 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/:id', async (req, res) => {
-    await NotesShort.findById(req.params.id);
+    const noteShort = await NotesShort.findById(req.params.id);
+    res.json(noteShort);
 });
 
 router.put('/:id', async (req, res) =>{

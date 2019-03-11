@@ -15,7 +15,8 @@ router.get('/', async (req, res) =>{
 });
 
 router.get('/:id', async (req, res) =>{
-    await Categories.findById(req.params.id);
+    const categorie = await Categories.findById(req.params.id);
+    res.json(categorie);
 });
 
 router.put('/:id', async (req, res) =>{

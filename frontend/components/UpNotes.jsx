@@ -47,10 +47,6 @@ class UpNotes extends Component {
     e.preventDefault();
   }
 
-  componentWillUnmount(){
-    console.log('componentWillUnmount');
-  }
-
   render() {
     const options = this.state.categories.map((option, i) => (
       <option key={i}>{option.name}</option>
