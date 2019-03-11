@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './components/Navbar.jsx';
-//import Slider from './assets/img1.jpg';
+import Slider from './components/Slider.jsx';
 import News from './components/News.jsx';
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar></Navbar>
-        {/*<img src={Slider} className="img-fluid"></img>*/}
+        <Slider></Slider>
         <div className="container-fluid">
           <News></News>
         </div>

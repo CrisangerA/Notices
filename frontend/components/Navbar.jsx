@@ -4,7 +4,7 @@ import React, { Component } from "react";
 class Navbar extends Component {
   render() {
     return (
-      <nav id="navbar" className="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+      <nav id="navbar" className="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
         <a className="navbar-brand" href="#">
           {/*<img src={Logo} className="Navbar-Logo" alt="Noticias"></img>*/}
           <i className="fab fa-react" />

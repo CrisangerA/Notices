@@ -29,6 +29,8 @@ app.use(express.json());
 
 // routes
 app.use('/api/notes', require('./routes/notes.routes'));
+app.use('/api/notesshort', require('./routes/notesshort.routes'));
+app.use('/api/categories', require('./routes/categories.routes'));
 
 // static files
 app.use(express.static(path.join(__dirname, 'public')));

@@ -6,7 +6,7 @@ router.post('/', async (req, res) => {
     const { title, description, category } = req.body;
     const newNote = new Notes({title, description, category});
     await newNote.save();
-    res.json({status: 'Note saved'})
+    res.json({status: 'Note saved'});
 });
 
 router.get('/', async (req, res) => {
@@ -22,12 +22,12 @@ router.put('/:id', async (req, res) =>{
     const { title, description, category } = req.body;
     const newNote = { title, description, category };
     await Notes.findByIdAndUpdate(req.params.id, newNote);
-    res.json({status: 'Note edited'})
-})
+    res.json({status: 'Note edited'});
+});
 
 router.delete('/:id', async (req, res) => {
     await Notes.findByIdAndDelete(req.params.id);
-    res.json({status: 'Note deleted'})
+    res.json({status: 'Note deleted'});
 });
 
 
