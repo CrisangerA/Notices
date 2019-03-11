@@ -159,31 +159,6 @@ class Notes extends Component {
         </div>
       );         
     });
-    /*const notes = this.state.Notes.map((note, i) => {
-      return (
-        <div className="card shadow mb-3" key={i}>
-          <div className="card-header">
-            <h5 className="card-title d-inline"> {note.title} </h5>
-          </div>
-          <div className="card-body">
-            <p className="card-text">
-              {note.description}
-            </p>
-          </div>
-          <div className="card-footer">
-            <div className="row">
-              <div className="col-md-6">
-                <small className="d-inline"> {note.category} {format(note.created_at)} </small>
-              </div>
-              <div className="col-md-6">
-                <button type="button" onClick={() => this.deleteNotes(note._id)} className="btn btn-danger d-inline float-right mx-1"><i class="fas fa-trash"></i></button>
-                <button type="button" onClick={() => this.editNotes(note._id)} className="btn btn-warning d-inline float-right mx-1"><i class="fas fa-edit"></i></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      );
-    });*/
 
     const options = this.state.categories.map((option, i) => (<option key={i}>{option.name}</option>));
 
