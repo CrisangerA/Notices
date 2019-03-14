@@ -1,0 +1,28 @@
+#toast{
+    position: relative;
+    top: 0;
+    right: 0;
+    min-height: 200px;
+}
+
+#Navbar{
+    text-transform: uppercase;
+}
+
+.img-slider{
+    max-height: 450px;
+    min-height: 200px;
+    filter: brightness(70%);
+}
+
+.News{
+    position: relative;
+    z-index: 1;
+}
+
+.bg-blue{
+    background-color: #00acc1;
+    color: white;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(0, 172, 193, 0.46);
+    transition: 0.5;
+}

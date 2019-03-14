@@ -3,8 +3,8 @@ const router = Router();
 const Notes = require('../models/notes');
 
 router.post('/', async (req, res) => {
-    const { title, description, category } = req.body;
-    const newNote = new Notes({title, description, category});
+    const { description, category } = req.body;
+    const newNote = new Notes({description, category});
     await newNote.save();
     res.json({status: 'Note saved'});
 });
@@ -20,8 +20,8 @@ router.get('/:id', async (req, res) => {
 });
 
 router.put('/:id', async (req, res) =>{
-    const { title, description, category } = req.body;
-    const newNote = { title, description, category };
+    const { description, category } = req.body;
+    const newNote = { description, category };
     await Notes.findByIdAndUpdate(req.params.id, newNote);
     res.json({status: 'Note edited'});
 });
