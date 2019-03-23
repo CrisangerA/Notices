@@ -9,6 +9,20 @@ import './components/styles/styles.css';
 
 class App extends Component {
   render() {
+
+    $(window).scroll(function() {
+      var windowHeight = $(window).scrollTop();
+      var News = $("#News").offset();
+      News = News.top;
+      if (windowHeight >= News) {
+        $("#Navbar").addClass("bg-blue");
+        $("#Navbar").removeClass("bg-initial");
+      } else {
+        $("#Navbar").removeClass("bg-blue");
+        $("#Navbar").addClass("bg-initial");
+      }
+    });
+
     return (
       <div className="App">
         <Navbar></Navbar>

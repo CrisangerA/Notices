@@ -9,15 +9,10 @@
     text-transform: uppercase;
 }
 
-/*.bd-example{
-    position: relative;
-    z-index: -1;
-}*/
-
 .img-slider{
     max-height: 450px;
     min-height: 200px;
-    filter: brightness(80%);
+    filter: brightness(70%);
 }
 
 .News{
@@ -29,7 +24,13 @@
     background-color: #00acc1;
     color: white;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(0, 172, 193, 0.46);
-    transition: 0.5;
+    transition: 0.3s;
+}
+
+.bg-initial{
+    background: transparent;
+    color: white;
+    transition: 0.3s;
 }
 
 /*# sourceMappingURL=bundle.css.map*/

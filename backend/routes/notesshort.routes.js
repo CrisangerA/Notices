@@ -3,8 +3,8 @@ const router = Router();
 const NotesShort = require('../models/notesshort');
 
 router.post('/', async (req, res) => {
-    const { title, description } = req.body;
-    const newNoteShort = NotesShort({ title, description});
+    const { description, category } = req.body;
+    const newNoteShort = NotesShort({ description, category});
     await newNoteShort.save();
     res.json({status: 'Note saved'});
 });
@@ -20,8 +20,8 @@ router.get('/:id', async (req, res) => {
 });
 
 router.put('/:id', async (req, res) =>{
-    const { title, description} = req.body;
-    const newNoteShort = { title, description};
+    const { description, category} = req.body;
+    const newNoteShort = { description, category};
     await NotesShort.findByIdAndUpdate(req.params.id, newNoteShort);
     res.json({status: 'Note edited'});
 });
