@@ -32,6 +32,11 @@ class App extends Component {
           <Route path="/NotesShort" component={UpNotesShort} />
           <Route path="/Categories" component={Categories} />
         </Switch>
+        <footer className="py-5 bg-dark">
+          <div className="container">
+            <p classNameass="m-0 text-center text-white">Copyright &copy; Creado y diseñado por Crisanger</p>
+          </div>
+        </footer>
       </div>
     );
   }
