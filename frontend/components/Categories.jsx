@@ -152,7 +152,7 @@ class Categories extends Component {
           <div class="dropdown-divider" />
 
           {/* NotesShort */}
-          <div className="card shadow-lg mt-5">
+          <div className="card shadow-lg mt-5 mb-5">
             <div className="card-header" />
             <div className="card-body" style={{ overflow: "auto" }}>
               <table class="table">

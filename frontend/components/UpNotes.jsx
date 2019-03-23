@@ -139,7 +139,7 @@ class UpNotes extends Component {
   }
 
   render() {
-    const Notes = notesReverce.map((note, i) => {
+    const Notes = this.state.Notes.map((note, i) => {
       return (
         <tr key={i}>
           <th scope="row">{i + 1}</th>
@@ -197,7 +197,7 @@ class UpNotes extends Component {
           <div class="dropdown-divider" />
 
           {/* Notes */}
-          <div className="card shadow-lg mt-5">
+          <div className="card shadow-lg mt-5 mb-5">
             <div className="card-header" />
             <div className="card-body" style={{ overflow: "auto" }}>
               <table class="table">
